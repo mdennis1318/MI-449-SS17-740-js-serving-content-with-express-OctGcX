@@ -1,0 +1,8 @@
+<header>
+  <h1>⚽️Soccer Fansite⚽️</h1>
+  <nav>
+    <% Object.keys(navs).forEach(function (id) { %>
+      <a href=<%= navs[id].path %>><%= navs[id].name %></a>
+    <% }) %>
+  </nav>
+</header>
