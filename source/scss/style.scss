@@ -1,11 +1,31 @@
 @import "_variables";
 
 body {
-  background: $primary-color;
+  font-style: $trebuchet-font;
+  display: flex;
+  flex-direction: column;
+  background-color: $primary-color;
 }
 
 h1 {
   text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: $font-base-size * 4;
+
+  &.homepage-title {
+    color: $quarternary-color;
+  }
+}
+
+img {
+  &.teamlogo {
+    max-width: 33%;
+    height: 250px;
+    margin: auto;
+  }
 }
 
 header {
@@ -41,6 +61,14 @@ header {
       &:visited {
         color: $quarternary-color;
       }
+    }
+  }
+}
+
+div {
+  &.league-logos {
+    img {
+      max-width: 33%;
     }
   }
 }
