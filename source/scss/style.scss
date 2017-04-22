@@ -23,8 +23,38 @@ h2 {
 img {
   &.teamlogo {
     max-width: 33%;
-    height: 250px;
+    height: 350px;
     margin: auto;
+  }
+}
+
+a {
+  &.official-site {
+    font-size: $font-base-size * 1.5;
+    text-align: center;
+    margin: 25px auto;
+    color: white;
+    text-decoration: none;
+    background-color: #00529f;
+    padding: 20px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &.real {
+      background-color: #00529f;
+    }
+
+    &.barca {
+      background-color: #a50044;
+    }
+
+    &.chelsea {
+      background-color: #034694;
+    }
+
+    &.juve {
+      background-color: black;
+    }
   }
 }
 
@@ -69,6 +99,39 @@ div {
   &.league-logos {
     img {
       max-width: 33%;
+    }
+  }
+
+  &.team-info {
+    margin: auto;
+    background-color: #aaa;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px solid $secondary-color;
+
+    &.rm {
+      border: 3px solid #00529f;
+    }
+
+    &.ju {
+      border: 3px solid black;
+    }
+
+    &.ch {
+      border: 3px solid #034694;
+    }
+
+    &.fcb {
+      border: 3px solid #a50044;
+    }
+
+    h3 {
+      font-size: $font-base-size * 1.5;
+      margin: 0;
+    }
+
+    p {
+      margin: 15px;
     }
   }
 }

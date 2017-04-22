@@ -27,6 +27,29 @@ var navs = {
   }
 }
 
+var teams = {
+  realmadrid: {
+    league: 'La Liga',
+    stadium: 'Santiago Bernabéu Stadium',
+    coach: 'Zinedine Zidane'
+  },
+  barcelona: {
+    league: 'La Liga',
+    stadium: 'Camp Nou',
+    coach: 'Luis Enrique'
+  },
+  chelsea: {
+    league: 'Barclay\'s Premier League',
+    stadium: 'Stamford Bridge',
+    coach: 'Antonio Conte'
+  },
+  juventus: {
+    league: 'Serie A',
+    stadium: 'Juventus Stadium',
+    coach: 'Massimiliano Allegri'
+  }
+}
+
 app.get('/', function (request, response) {
   response.render('pages/index', {
     navs: navs
@@ -34,22 +57,26 @@ app.get('/', function (request, response) {
 })
 app.get('/realmadrid', function (request, response) {
   response.render('pages/realmadrid', {
-    navs: navs
+    navs: navs,
+    teams: teams
   })
 })
 app.get('/barcelona', function (request, response) {
   response.render('pages/barcelona', {
-    navs: navs
+    navs: navs,
+    teams: teams
   })
 })
 app.get('/chelsea', function (request, response) {
   response.render('pages/chelsea', {
-    navs: navs
+    navs: navs,
+    teams: teams
   })
 })
 app.get('/juventus', function (request, response) {
   response.render('pages/juventus', {
-    navs: navs
+    navs: navs,
+    teams: teams
   })
 })
 
