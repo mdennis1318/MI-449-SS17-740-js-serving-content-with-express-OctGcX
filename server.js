@@ -28,6 +28,9 @@ var navs = {
 }
 
 var realmadrid = {
+  name: 'Real Madrid',
+  website: 'http://www.realmadrid.com/en',
+  logo: '/images/Real_Madrid.png',
   league: 'La Liga',
   stadium: 'Santiago Bernabéu Stadium',
   coach: 'Zinedine Zidane'
@@ -65,6 +68,9 @@ var realTrophies = {
 }
 
 var barcelona = {
+  name: 'Barcelona',
+  website: 'https://www.fcbarcelona.com/',
+  logo: '/images/barcelonalogo.png',
   league: 'La Liga',
   stadium: 'Camp Nou',
   coach: 'Luis Enrique'
@@ -98,6 +104,9 @@ var barcaTrophies = {
 }
 
 var chelsea = {
+  name: 'Chelsea',
+  website: 'http://www.chelseafc.com/',
+  logo: '/images/chelsealogo.png',
   league: 'Barclay\'s Premier League',
   stadium: 'Stamford Bridge',
   coach: 'Antonio Conte'
@@ -131,6 +140,9 @@ var chelTrophies = {
 }
 
 var juventus = {
+  name: 'Juventus',
+  website: 'http://www.juventus.com/en/',
+  logo: '/images/juventuslogo.png',
   league: 'Serie A',
   stadium: 'Juventus Stadium',
   coach: 'Massimiliano Allegri'
