@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title><%= teaminfo.name %>⚽️</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+    <% include ../partials/header %>
+    <h2 class="homepage-title"><%= teaminfo.name %></h2>
+    <img class="teamlogo" src=<%= teaminfo.logo %> alt="Team Logo">
+    <a class="official-site real" href=<%= teaminfo.website %>>Official Site</a>
+
+    <div class="team-info">
+      <h3>Team Info:</h3>
+      <p>
+        League: <%= teaminfo.league %><br>
+        Stadium: <%= teaminfo.stadium %><br>
+        Head Coach: <%= teaminfo.coach %><br>
+      </p>
+      <p>Trophies Won:</p>
+      <ul>
+        <% Object.keys(trophies).forEach(function (id) { %>
+          <li><%= trophies[id].name %><%= trophies[id].wins %></li>
+        <% }) %>
+      </ul>
+    </div>
+  </body>
+</html>
